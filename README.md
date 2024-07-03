@@ -32,7 +32,7 @@
 
   2. cmd 창에 `nvidia-smi`명령어 실행
 
-     <img src="C:\Users\hanmu\AppData\Roaming\Typora\typora-user-images\image-20240625220139016.png" alt="image-20240625220139016" style="zoom:80%;" />
+     <img src="https://github.com/HanMinung/CAE/assets/99113269/b52641be-909f-4c7d-820c-d6ba512028ec" alt="image" style="zoom: 67%;" />
 
   3. 우측 상단의 CUDA Version이 호환 가능한 최대 CUDA version 입니다.
 
