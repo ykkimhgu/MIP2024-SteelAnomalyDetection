@@ -1,0 +1,35 @@
+나는 Unsupervised anomaly detection 기법인 patchcore 모델을 Severstal steel defect dataset에 적용해보고자 한다.
+논문에서는 MVTec 데이터셋을 적용하여 모델의 성능을 평가하고 있는데, 나는 그거를 Severstal steel defect dataset에 적용하고자 한다.
+MVTec 데이터셋의 경우, 데이터셋 파일의 구성이 다음과 같다.
+bottle
+|- ground truth
+|-- broken_large
+|-- broken_small
+|-- contamination
+|- test
+|-- broken_large
+|-- broken_small
+|-- contamination
+|-- good
+|- train
+|-- good
+
+나는, 우선 코드를 크게 변형시키지 않기 위해 steel defect dataset도 위와 같이 똑같은 구성으로 데이터를 구성했다.
+steel
+|- ground truth
+|-- 1
+|-- 2
+|-- 3
+|- test
+|-- 1
+|-- 2
+|-- 3
+|-- good
+|- train
+|-- good
+
+우선 코드에 대한 데이터의 상대경로는 다음과 같다.
+"../Datasets/Severstal" 
+위 경로를 파고들면, 비로소 steel 경로가 나온다.
+
+두 데이터의 이미지는 
