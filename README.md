@@ -28,15 +28,15 @@
 
 * 설치 가능한 최대 CUDA 버전 확인
 
-  1. Windows 창에 `cmd`검색
+  1) Windows 창에 `cmd`검색
 
   2. cmd 창에 `nvidia-smi`명령어 실행
 
-     <img src="https://github.com/HanMinung/CAE/assets/99113269/b52641be-909f-4c7d-820c-d6ba512028ec" alt="image" style="zoom: 67%;" />
+  <img src="https://github.com/HanMinung/CAE/assets/99113269/b52641be-909f-4c7d-820c-d6ba512028ec" alt="image" style="zoom: 67%;" />
 
   3. 우측 상단의 CUDA Version이 호환 가능한 최대 CUDA version 입니다.
 
-* 설치 link: https://developer.nvidia.com/cuda-toolkit-archive
+* 설치 링크: https://developer.nvidia.com/cuda-toolkit-archive
 
   
 
@@ -285,6 +285,14 @@ conda list
   * batch size: **batch size 8을 기준**으로 했을 때, 학습하는 중에 GPU는 일반적으로 **10GB ~ 12GB 정도 실시간으로 소모**되었기에, 학습 컴퓨터 성능에 맞게 설정하는 과정이 필요합니다.
   * Learning rate: 모델 내부가 U-net 구조를 가지고 있기 때문에, 0.0001을 설정하는 것이 적절하다고 판단했으나, 후에 조정이 필요하다면 수정이 필요한 파라미터입니다.
   * SSIM loss에서의 window size: 이미지의 window size에 맞게 커팅하고, 해당 영역이 얼마나 비슷한지를 판단하게 되는데, 원본 코드에서는 해당 수치를 11로 설정.
+
+
+
+* Train 코드를 돌리게 되면, 최종적으로 .pckl 파일과 _seg.pckl 파일이 저장되게 됩니다. (학습 결과 모델) Pre-Trained 모델의 경우, 용량이 너무 커서 따로 업로드하지는 않았습니다. MVTec 데이터셋에 대한 Pre-Trained 모델 다운로드는 아래 링크를 통해 진행 가능합니다.
+
+* Pre-Trained model for MVTec dataset 링크: https://drive.usercontent.google.com/download?id=1eOE8wXNihjsiDvDANHFbg_mQkLesDrs1&authuser=0
+
+  
 
 
 
